@@ -22,9 +22,35 @@ body {
   margin-bottom: 24px;
 }
 
+.hero-text {
+  max-width: 400px;
+  min-width: 300px;
+  font-size: larger;
+  color: #cacaca;
+}
+
+h2 {
+  color: white;
+  font-size: xx-large;
+}
+
 #hero-image {
-  max-width: 50%;
+  /* width: ; */
+  max-width: 30%;
+  max-height: auto;
+  min-width: 300px;
+  min-height: auto;
+  object-fit: cover;
   border-radius: 5%;
+}
+
+.hero-header {
+  background: #1f2937;
+  padding: 1em;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -48,7 +74,7 @@ body {
 
 .footer {
   background: #1f2937;
-  color: white;
+  color: #b6b6b6;
   padding: 1em;
   gap: 2em;
   align-items: center;
@@ -72,5 +98,5 @@ a {
   color: inherit;
 }
 a:hover {
-  color: orange;
+  color: white;
 }
