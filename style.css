@@ -18,12 +18,13 @@ body {
   flex-direction: column;
   flex: 1;
 }
-
+/* HEADER */
 .header {
   background: #1f2937;
   color: white;
   padding: 8px 24px;
   justify-content: space-between;
+  font-size: large;
 }
 
 .header h1 {
@@ -37,38 +38,21 @@ body {
   gap: 16px;
 }
 
-.hero-text {
-  max-width: 400px;
-  min-width: 300px;
-  font-size: large;
-  color: #cacaca;
+.header a:hover:not(.header h1 a) {
+  color: #3882f6;
+  /* font-size: 110%; */
 }
 
-.hero-text h2 {
-  color: white;
-  font-size: xx-large;
-}
-
-.hero-header img {
-  max-width: 30%;
-  max-height: auto;
-  min-width: 300px;
-  min-height: auto;
-  border-radius: 8px;
-}
-
-.hero-header {
-  background: #1f2937;
-  padding: 1em;
-  gap: 2em;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
+/* CARDS */
 .content {
   flex-direction: column;
   flex: 1;
+}
+
+h2.section-title {
+  color: #3882f6;
+  font-size: xx-large;
+  padding: 0 24px;
 }
 
 .cards {
@@ -76,6 +60,7 @@ body {
   justify-content: space-evenly;
   gap: 24px;
   padding: 24px;
+  padding-top: 0;
 }
 
 .card {
@@ -86,12 +71,35 @@ body {
   padding: 16px;
 }
 
-.quote img {
-  max-width: 200px;
-  min-width: auto;
-  padding-left: 30%;
+/* HERO-HEADER */
+.hero-header {
+  background: #1f2937;
+  padding: 1em;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+.hero-text h2 {
+  color: white;
+}
+
+.hero-text {
+  max-width: 400px;
+  min-width: 300px;
+  color: #cacaca;
+}
+
+.hero-header img {
+  max-width: 30%;
+  max-height: auto;
+  min-width: 300px;
+  min-height: auto;
+  border-radius: 8px;
+}
+
+/* QUOTE */
 .quote {
   background-color: #e5e7eb;
   flex-direction: column;
@@ -107,6 +115,13 @@ body {
   font-family: "Lucida Handwriting", sans-serif;
 }
 
+.quote img {
+  max-width: 200px;
+  min-width: auto;
+  padding-left: 30%;
+}
+
+/* FOOTER */
 .footer {
   background: #1f2937;
   color: #cacaca;
@@ -130,6 +145,7 @@ body {
   padding: 6px;
 }
 
+/* email logo unique size */
 #custom-size {
   height: 29px;
 }
@@ -138,16 +154,17 @@ body {
   align-self: flex-end;
 }
 
+.footer a:hover {
+  color: #3882f6;
+}
+
+.media-icons a:hover {
+  filter: invert(60%) sepia(45%) saturate(7382%) hue-rotate(200deg)
+    brightness(97%) contrast(98%);
+}
+
+/* PAGE-WIDE */
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.header a:hover {
-  color: #808080;
-  /* font-size: 110%; */
-}
-
-a:hover {
-  color: white;
 }
