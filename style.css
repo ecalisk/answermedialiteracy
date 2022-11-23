@@ -1,16 +1,18 @@
 /* display: flex */
 body,
 .header,
+.header-items,
 .hero-header,
 .content,
 .footer,
-.cards {
+.cards,
+.quote {
   display: flex;
 }
 
 body {
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Tahoma, Verdana, sans-serif;
   background-color: whitesmoke;
   flex-direction: column;
   flex: 1;
@@ -19,27 +21,40 @@ body {
 .header {
   background: #1f2937;
   color: white;
-  margin-bottom: 24px;
+  padding: 8px 24px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.header h1 {
+  color: rgb(203, 46, 46);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: right;
+}
+
+.header-items {
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .hero-text {
   max-width: 400px;
   min-width: 300px;
-  font-size: larger;
+  font-size: large;
   color: #cacaca;
 }
 
-h2 {
+.hero-text h2 {
   color: white;
   font-size: xx-large;
 }
 
-#hero-image {
+.hero-header img {
   max-width: 30%;
   max-height: auto;
   min-width: 300px;
   min-height: auto;
-  border-radius: 5%;
+  border-radius: 8px;
 }
 
 .hero-header {
@@ -60,19 +75,41 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 24px;
+  padding: 24px;
 }
 
 .card {
-  border: 1px solid rgb(0, 0, 0);
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #1f2937;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   max-width: 150px;
   padding: 16px;
 }
 
+.quote img {
+  max-width: 200px;
+  min-width: auto;
+  padding-left: 30%;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+}
+
+.quote p {
+  font-size: larger;
+  max-width: 600px;
+  text-align: center;
+  font-style: italic;
+  font-family: "Lucida Handwriting", sans-serif;
+}
+
 .footer {
   background: #1f2937;
-  color: #b6b6b6;
+  color: #cacaca;
   padding: 1em;
   gap: 2em;
   align-items: center;
@@ -95,6 +132,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.header a:hover {
+  color: #808080;
+  /* font-size: 110%; */
+}
+
 a:hover {
   color: white;
 }
